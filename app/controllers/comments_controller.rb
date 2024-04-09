@@ -1,7 +1,4 @@
-class CommentsController < ApplicationController
-
-
-  class CommentsController < ApplicationController
+ class CommentsController < ApplicationController
     before_action :authenticate_user!
   
     def create
@@ -12,14 +9,14 @@ class CommentsController < ApplicationController
         flash[:success] = "コメントしました"
         redirect_back(fallback_location: root_path)
       else
-        flash[:success] = "コメントできませんでした"
+        flash[:error] = "コメントできませんでした"
         redirect_back(fallback_location: root_path) 
       end
     end
   
     private
   
-      def comment_params
-        params.require(:comment).permit(:content)
-      end
+    def comment_params
+      params.require(:comment).permit(:content)
+    end
   end
