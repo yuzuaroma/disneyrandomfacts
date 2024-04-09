@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="ja"><!--言語の指定-->
+    <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+        <meta charset="utf-8">
+        <div class=joy>
+        <h1>Disney Quiz</h1>
+        </div>
+    </head>
+
+    <div class=sadness>
+    <body>
+     <body>あなたはディズニーパークに<br>
+     ついてどれくらい知ってる？みんなでクイズを受けてみよう！</body>
+    </div>
+        <div class="start">
+            <%= link_to "初級者編", new_perfume_path, class: "link" %>
+        </div>
+        <div class="harder">
+            <%= link_to "チャレンジ問題！", new_question_path, class: "link" %>
+       </div>
+    
+    <div class="fear">
+    <div class="disgust">
+     <%= image_tag("baymax.png", size:"250x250") %>
+    </div>
+    <div class="anger">
+     <body>あなたのディズニーエクスパート度を計測しています....</body>
+    </div>
+    </div>
+    </body>

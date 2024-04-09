@@ -1,0 +1,66 @@
+<div class=andy>
+  <h1>Post</h1>
+</div>
+
+<div class="mike">
+  <%= image_tag("Eeyore.png", size: "100x150") %>
+</div>
+
+  <%= image_tag @yuzu.image_url, size: "250x200" %>
+
+<div class="yuzu">
+  <p><%= @yuzu.body %></p>
+  <p><%= @yuzu.created_at %></p>
+    <% if user_signed_in? %>
+      <% if current_user.already_liked?(@yuzu) %>
+        <%= link_to yuzu_like_path(@yuzu), method: :delete do %>
+            <i class="fas fa-heart"></i><%= @yuzu.likes.count %>
+        <% end %>
+      <% else %>
+        <%= link_to yuzu_likes_path(@yuzu), method: :post do %>
+            <i class="far fa-heart"></i><%= @yuzu.likes.count %>
+        <% end %>
+      <% end %>
+    <% else %>
+    <i class="far fa-heart"></i><%= @yuzu.likes.count %>
+    <% end %>
+  <div class=buzz>
+    <%= link_to "編集する", edit_yuzu_path(@yuzu.id) %>
+  </div>
+</div>
+
+<h6>いいねしたユーザー</h6>
+<% @yuzu.liked_users.each do |user| %>
+  <li><%= user.email %></li>
+<% end %>
+
+<div class=jessey>
+<div class="comment-wrapper">
+  <p>コメント一覧</p>
+  <% @comments.each do |c| %>
+    <div>
+      <%= c.user.email unless c.user.blank? %>
+      <br>
+      <%= c.content %>
+    </div>
+      <br>
+  <% end %>
+  </div>
+
+  <% if user_signed_in? %>
+    <%= form_with(model: [@yuzu, @comment], local: true) do |f| %>
+      <%= f.text_area :content %>
+      <%= button_tag type: "submit" do %>
+        <i class="far fa-comments"></i> コメントする
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
+
+<div class=sally>
+<%= link_to "投稿一覧に戻る", yuzus_path %>
+</div>
+
+<div class=joy>
+<%= image_tag("pooh.png", size: "100x100") %>
+</div>

@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  yuzu: one
+  user: one
+
+two:
+  yuzu: two
+  user: two

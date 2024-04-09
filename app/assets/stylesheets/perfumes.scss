@@ -1,0 +1,113 @@
+// Place all the styles related to the perfumes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.joy{
+    text-align: center;
+    background-color: #F8E0E6;
+}
+
+.sadness{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.start{
+    background-color: #F8E0E6;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 28px;
+}
+
+.fear{
+    display: flex;
+    justify-content: center;
+}
+
+.anger{
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    font-size: 18px;
+}
+
+.harder{
+    text-align:center;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 28px;
+    margin-top: 2%;
+    background-color: #F8E0E6;
+}
+
+.col-6{
+    margin-left: 8%;
+}
+
+.col-12{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-weight:bold;
+}
+
+.quiz{
+    margin-bottom: 1.5%;
+    margin-right: 50%;
+    background-color: #F8E0E6; 
+}
+
+.intoro{
+    text-align: center;
+    font-size: 275%;
+    margin-top: 2%;
+    background-color: #F8E0E6; 
+    margin-bottom: 2%;
+}
+
+.result{
+    text-align:center;
+    font-size: 200%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left:15%;
+}
+
+.olaf{
+    justify-content: center;
+    display: flex;
+    margin-left:25%;
+}
+
+.tweet{
+    display: flex;
+    justify-content: center;
+}
+
+.ramen{
+    text-align: center;
+    font-size: 125%;
+    margin-top:4%;
+}
+
+.water{
+    display:flex;
+    width: 912px; 
+    height: 450px; 
+}
+
+.apple{
+    margin-top: 3%;
+    margin-left:15%;
+}
+
+.orangejuice{
+    margin-bottom:5%;
+    margin-top:15%;
+    margin-left:22%;
+    margin-bottom: 60%;
+    background-color:#F8E0E6; 
+}

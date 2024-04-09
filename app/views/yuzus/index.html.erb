@@ -1,0 +1,58 @@
+<div class=jasmine>
+  <h1>Timeline</h1>
+</div>
+
+<div class=rapunzel>
+  <div class=cinderella>
+  <%= image_tag("twinkle.png", size:"100x100") %>
+  </div>
+  <div class=aurora>
+    <%= image_tag("aristo-cats.png") %>
+  </div>
+  <div class=cinderella>
+  <%= image_tag("twinkle.png", size:"100x100") %>
+  </div>
+</div>
+
+<div class=tiana>
+  <%= form_tag({controller:"yuzus",action:"index"}, method: :get) do %>
+  <%= text_field_tag :search %>
+  <%= submit_tag '検索'  %>
+  <% end %>
+  <%= link_to "新しくポストする", new_yuzu_path %>
+</div>
+
+
+<div class="yuzus-container">
+  <% @yuzus.each do |t| %>
+    <div class="yuzu">
+        <%= image_tag t.image_url, size: "250x200" if t.image? %>
+        <% if user_signed_in? %>
+            <%= t.user.name %>
+        <% end %>
+      <%= t.title %>
+      <%= t.body %>
+    </div>
+  <div class="snowwhite">
+      <% if user_signed_in? %>
+      <%= link_to "詳細へ", yuzu_path(t.id) %>
+      <% if user_signed_in? && current_user.id == t.user_id %>
+      <%= button_to "削除する", yuzu_path(t.id), method: :delete %>
+    <% end %> 
+    <% if user_signed_in? && current_user.admin == "true" %>
+    <%= button_to "削除する", yuzu_path(t.id), method: :delete %>
+    <% end %>
+      <% if current_user.already_liked?(t) %>
+          <%= button_to yuzu_like_path(id: t.id, yuzu_id: t.id), method: :delete do %>
+            <i class="fas fa-heart"></i><%= t.likes.count %>
+            <% end %>
+      <% else %>
+          <%= button_to yuzu_likes_path(id: t.id, yuzu_id: t.id), method: :post do %>
+            <i class="far fa-heart"></i><%= t.likes.count %>          <% end %>
+      <% end %>
+  <% else %>
+  <i class="far fa-heart"></i><%= t.likes.count %>
+  <% end %>
+</div>
+<% end %>
+</div>

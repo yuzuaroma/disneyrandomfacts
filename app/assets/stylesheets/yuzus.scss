@@ -1,0 +1,178 @@
+// Place all the styles related to the yuzus controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+.donald{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minnie{
+    margin: auto;
+    text-align: center;
+    background-color: #F8E0E6;
+    padding: 5%;
+}
+
+.minnie img{
+    width: 40vw;
+}
+
+.mickey{
+    margin: 3%;
+}
+
+.daisy{
+    text-align: center;
+    justify-content: center;
+}
+
+.goofy{
+    display: flex;
+    justify-content: center;
+}
+
+.chip{
+    margin:10px;
+    text-align: center;
+}
+
+.dale{
+    margin:5px;
+    text-align: center;
+}
+
+.jasmine{
+    justify-content:center; 
+    display:flex;
+    text-align:center;
+    background-color:#F8E0E6;
+    margin-top:3%; 
+    font-size:25px;
+}
+
+.rapunzel{
+    justify-content:center;
+    display:flex;
+}
+
+.tiana{
+    margin-right:5%;
+    float: right;
+}
+
+.yuzus-container{
+    justify-content:center;
+    text-align:center;
+    margin:10%;
+}
+
+.andy{
+    text-align:center;
+    margin:5px;
+    background-color:#F8E0E6;    
+}
+
+.buzz{
+    float: right;
+    margin-right:5%;
+}
+
+.jessey{
+    display:flex;
+    justify-content:center;
+}
+
+.sally{
+    float:right;
+    margin-right:5%;
+}
+
+.yuzu{
+    justify-content:center;
+    display:flex;
+    text-align:center;
+    margin-top:5%;
+    margin: 10%;
+}
+
+.mike{
+    margin:3%;
+    float:right;
+}
+
+.joy{
+    margin:3%
+}
+
+.snowwhite{
+    float:right;
+    margin-left: 3%;
+    margin-right:3%;
+    margin-top:-10%;
+}
+
+.baymax{
+    display:flex;
+    justify-content:center;
+    margin-top:2%;
+    margin-bottom:2%;
+    background-color:#F8E0E6; 
+}
+
+.frozen{
+    line-height: 400px;
+    margin:4%;
+    text-align: center; 
+    border: 10px solid #F8E0E6; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.field{
+    margin-top:3%;
+    justify-content:center;
+}
+
+.moana{
+    text-align:center;
+    justify-content:center;
+    display:flex;
+    font-size:20px;
+    margin-top: 7%;
+    margin-right:3%;
+    margin-left:15%;
+}
+
+.stitch{
+    justify-content: center;
+    text-align:center;
+    display:flex;
+}
+
+.aa{
+    display: flex;
+}
+
+.tangled{
+    margin:4%;
+}
+
+.maui{
+    margin-left: 10%;
+}
+
+.heihei{
+    display:flex;
+}
+
+
+.mulan{
+    border: 10px solid #F8E0E6; 
+}

@@ -1,0 +1,59 @@
+<%= form_for(@perfume, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="container-sindan">
+        <div class="row">
+            <div class="col-12">
+                <div class="quiz">
+                <p>Question1. 東京ディズニーランドの開園日は何年何月何日？</p>
+                </div>
+                <%= image_tag("opening.png", size:"375x250") %>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>1983年4月15日</p>
+            </div>
+            <div class="col-6">
+        
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>1990年10月9日</p>
+            </div>
+            <div class="col-12">
+                <div class="quiz">
+                <p>Question2. 東京ディズニーランドのアトラクション、ホーンテッドマンションには何人の亡霊が住んでいる？</p>
+                </div>
+                <%= image_tag("haunted.png", size:"375x250") %>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>9999人</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>999人</p>
+            </div>
+            <div class="col-12">
+                <div class="quiz">
+                <p>Question3. タワー・オブ・テラーに登場する奇妙な偶像の名前は？</p>
+                </div>
+                <%= image_tag("towerofterror.png", size:"375x250") %>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>カリキ・ウマゥンドゥ</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>シリキ・ウトゥンドゥ</p>
+            </div>
+            <div class="col-12">
+                <div class="quiz">
+                <p>Question4. ディズニーシーのエリア、アラビアンコーストは誰が作り上げた<br>キャラクターは誰？</p>
+                </div>
+                <%= image_tag("arabbian.png", size:"375x250") %>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>ジーニー</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>アラジン</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sindanbotan">
+        <%= f.submit "post" %>
+    </div>
+<% end %>

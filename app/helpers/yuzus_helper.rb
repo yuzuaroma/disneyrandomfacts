@@ -1,0 +1,2 @@
+module YuzusHelper
+end
