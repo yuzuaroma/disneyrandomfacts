@@ -7261,7 +7261,7 @@
     "tapable" "^1.0.0"
     "webpack-sources" "^1.0.0"
 
-"webpack-cli@^3.3.12":
+"webpack-cli@^3.3.12", "webpack-cli@3.3.12":
   "integrity" "sha512-NVWBaz9k839ZH/sinurM+HcDvJOTXwSjYp1ku+5XKeOC03z8v5QitnK/x+lAxGXFyhdayoIf/GOpv85z3/xPag=="
   "resolved" "https://registry.npmjs.org/webpack-cli/-/webpack-cli-3.3.12.tgz"
   "version" "3.3.12"
@@ -7289,7 +7289,7 @@
     "range-parser" "^1.2.1"
     "webpack-log" "^2.0.0"
 
-"webpack-dev-server@^3":
+"webpack-dev-server@3":
   "integrity" "sha512-3x31rjbEQWKMNzacUZRE6wXvUFuGpH7vr0lIEbYpMAG9BOxi0928QU1BBswOAP3kg3H1O4hiS+sq4YyAn6ANnA=="
   "resolved" "https://registry.npmjs.org/webpack-dev-server/-/webpack-dev-server-3.11.3.tgz"
   "version" "3.11.3"
@@ -7344,10 +7344,10 @@
     "source-list-map" "^2.0.0"
     "source-map" "~0.6.1"
 
-"webpack@^4.0.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.36.0 || ^5.0.0", "webpack@^4.4.0", "webpack@^4.46.0", "webpack@>=2", "webpack@>=4.4.0", "webpack@4.x.x":
-  "integrity" "sha512-td7fYwgLSrky3fI1EuU5cneU4+pbH6GgOfuKNS1tNPcfdGinGELAqsb/BP4nnvZyKSG2i/xFGU7+n2PvZA8HJQ=="
-  "resolved" "https://registry.npmjs.org/webpack/-/webpack-4.47.0.tgz"
-  "version" "4.47.0"
+"webpack@^4.0.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.36.0 || ^5.0.0", "webpack@^4.4.0", "webpack@^4.46.0", "webpack@>=2", "webpack@>=4.4.0", "webpack@4.46.0", "webpack@4.x.x":
+  "integrity" "sha512-6jJuJjg8znb/xRItk7bkT0+Q7AHCYjjFnvKIWQPkNIOyRqoCGvkOs0ipeQzrqz4l5FtN5ZI/ukEHroeX/o1/5Q=="
+  "resolved" "https://registry.npmjs.org/webpack/-/webpack-4.46.0.tgz"
+  "version" "4.46.0"
   dependencies:
     "@webassemblyjs/ast" "1.9.0"
     "@webassemblyjs/helper-module-context" "1.9.0"
