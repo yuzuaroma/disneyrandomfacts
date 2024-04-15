@@ -1,0 +1,22 @@
+databases:
+  - name: Disney Random Facts_DB
+    databaseName: disney_random_facts_db
+    user: Disney Random Facts
+    region: singapore
+
+services:
+  - type: web
+    name: Disney Random Facts
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: Disney Random Facts_DB
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+
