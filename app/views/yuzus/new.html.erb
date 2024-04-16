@@ -25,13 +25,17 @@
       <%= f.text_field :body, :size => 70, :class => "frozen" %>
     </div>
 
-    <div class="field">
-      <%= f.label :image %>
-      <%= f.file_field :image %>
+    <div class="fudebako">
+      <%= f.label :image %><br>
+    <div class="irohasu">
+      <%= f.file_field :image%>
+    </div>
     </div>
 
     <%= f.submit "投稿する" %>
   <% end %>
 </div>
 
+<div class="megane">
 <%= link_to "一覧に戻る", yuzus_path %>
+</div>

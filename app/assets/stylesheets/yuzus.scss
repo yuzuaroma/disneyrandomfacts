@@ -125,11 +125,11 @@
 
 .frozen{
     line-height: 400px;
-    margin:4%;
     text-align: center; 
     border: 10px solid #F8E0E6; 
     display: flex; 
     justify-content: center; 
+    margin-left:-4%;
 }
 
 .field{
@@ -219,13 +219,20 @@
     margin-top:1%;
 }
 
-#far fa-comments{
-    text-decoration: none;
-    background-color: #F8E0E6;
-    border: none;
-    font-size: 20px;
-}
-
 .pencil{
     text-align:center;
+}
+
+.megane{
+    text-align:center;
+    margin-bottom:2%;
+    margin-top:1%;
+}
+
+.irohasu{
+    border: solid 10px;
+    border-color: #F8E0E6;
+    font-size: 20px;
+    padding:1%;
+    margin-bottom:3%;
 }
