@@ -4,8 +4,15 @@
 <% if @perfume.question == "1221" %>
     <div class="tweet">
         <div class="result">
-            <p>全問正解！</p>
+        <div class="geek">
+            <%= image_tag("olaf.png", size:"200x320") %>
         </div>
+    <div class="salon">
+        <%= image_tag("snowflakea.png", size:"90x75") %>
+            <p>全問正解！</p>
+        <%= image_tag("snowflakeb.png", size:"90x75") %>
+        </div>
+    </div>
         <div class="olaf">
             <%= image_tag("elsa.png", size:"275x250") %>
         </div>
@@ -230,9 +237,6 @@
 
 
 <div class="water">
-    <div class="apple">
-        <%= image_tag("olaf.png", size:"200x320") %>
-    </div>
     <div class="orangejuice">
         <%= link_to "トップに戻る", yuzus_top_path, class: "link" %>
     </div>

@@ -18,6 +18,8 @@
     text-align: center;
     background-color: #F8E0E6;
     padding: 5%;
+    font-family: 'Iowan Old Style',sans-serif;
+    font-size:25px;
 }
 
 .minnie img{
@@ -31,6 +33,7 @@
 .daisy{
     text-align: center;
     justify-content: center;
+    margin-bottom: 2%;
 }
 
 .goofy{
@@ -55,6 +58,7 @@
     background-color:#F8E0E6;
     margin-top:3%; 
     font-size:25px;
+    font-family: 'Iowan Old Style',sans-serif;
 }
 
 .rapunzel{
@@ -76,17 +80,18 @@
 .andy{
     text-align:center;
     margin:5px;
-    background-color:#F8E0E6;    
+    background-color:#F8E0E6;  
+    font-family: 'Iowan Old Style',sans-serif;  
 }
 
 .buzz{
-    float: right;
-    margin-right:5%;
+    margin-left:86%;
+    margin-top:2%;
 }
 
 .jessey{
-    display:flex;
     justify-content:center;
+    text-align: center;
 }
 
 .sally{
@@ -102,15 +107,6 @@
     margin: 10%;
 }
 
-.mike{
-    margin:3%;
-    float:right;
-}
-
-.joy{
-    margin:3%
-}
-
 .snowwhite{
     float:right;
     margin-left: 3%;
@@ -124,6 +120,7 @@
     margin-top:2%;
     margin-bottom:2%;
     background-color:#F8E0E6; 
+    font-family: 'Iowan Old Style',sans-serif;
 }
 
 .frozen{
@@ -175,4 +172,60 @@
 
 .mulan{
     border: 10px solid #F8E0E6; 
+}
+
+.omizu{
+    text-align:center;
+    justify-content: center;
+    margin-left: 7%;
+    margin-right:7%;
+    border: solid 5px;
+    border-color:#F8E0E6;
+    padding:1%;
+}
+
+.ocha{
+    justify-content: center;
+    margin:3%;
+}
+
+.osayu{
+    display:flex;
+    justify-content:center;
+}
+
+.mike{
+    margin-top:5%;
+}
+
+.namacha{
+    margin-left:85%;
+    margin-top: 1%;
+    font-size:15px
+}
+
+.jessey{
+    font-size:18px;
+    justify-content:center;
+    text-align:center;
+}
+
+.ayataka{
+    margin-left:80%;
+}
+
+.hojicha{
+    text-align:center;
+    margin-top:1%;
+}
+
+#far fa-comments{
+    text-decoration: none;
+    background-color: #F8E0E6;
+    border: none;
+    font-size: 20px;
+}
+
+.pencil{
+    text-align:center;
 }
